@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-inter",
   display: "swap"
 });
 
-export const noto = Noto_Sans_JP({
+const noto = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-noto-jp",
