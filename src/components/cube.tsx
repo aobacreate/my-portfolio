@@ -1,38 +1,68 @@
 "use client"
 
 import { motion,useAnimationFrame } from "framer-motion"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 
 export default function Cube() {
     const ref = useRef<HTMLDivElement>(null)
+
     const [paused, setPaused] = useState(false)
     
     // 回転用の「仮想時間」
     const rotationTimeRef = useRef(0)
+     
+    // 日付と時間を分けて持つ
+    const [dateStr, setDateStr] = useState("")
+    const [timeStr, setTimeStr] = useState("")
+
+    useEffect(() => {
+        const updateTime = () => {
+        const now = new Date()
+
+        // 日本時間前提（ブラウザが日本ならこれでOK）
+        const year = now.getFullYear()
+        const month = String(now.getMonth() + 1).padStart(2, "0")
+        const day = String(now.getDate()).padStart(2, "0")
+        const hour = String(now.getHours()).padStart(2, "0")
+        const minute = String(now.getMinutes()).padStart(2, "0")
+
+        setDateStr(`${year}.${month}.${day}`) // 2026.03.01
+        setTimeStr(`${hour}:${minute}`)       // 18:42
+        }
+
+        updateTime()
+        const interval = setInterval(updateTime, 60000) // 1秒ごとに更新
+
+        return () => clearInterval(interval)
+    }, [])
 
     useAnimationFrame((t, delta) => {
-    if (!ref.current) return
+        if (!ref.current) return
 
-    // paused のときは逆方向に進める
-    const dir = paused ? -1 : 1
-    const speed = 0.5 // ここを 0.5 とかにすると全体の回転速度調整できる
+        // paused のときは逆方向に進める
+        const dir = paused ? -1 : 1
+        const speed = 0.5 // ここを 0.5 とかにすると全体の回転速度調整できる
 
-    rotationTimeRef.current += delta * dir * speed
+        rotationTimeRef.current += delta * dir * speed
 
-    const vt = rotationTimeRef.current
+        const vt = rotationTimeRef.current
 
-    // 回転は仮想時間 vt から計算
-    const rotate = Math.sin(vt / 10000) * 200
+        // 回転は仮想時間 vt から計算
+        const rotate = Math.sin(vt / 10000) * 200
 
-    // y は今まで通り t から計算（paused 無関係）
-    const y = Math.sin(t / 1000) * -40
+        // y は今まで通り t から計算（paused 無関係）
+        const y = Math.sin(t / 1000) * -40
 
-    ref.current.style.transform =
-        `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`
+        ref.current.style.transform =
+            `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`
     })
 
     return (
     <div className="cube-container">
+        <div className="center-text">
+            <div>{dateStr}</div>
+            <div>{timeStr}</div>
+        </div>
         <div
             className="cube"
             ref={ref}
@@ -71,6 +101,23 @@ function StyleSheet() {
             width: 200px;
             height: 200px;
             margin: 0;
+            display: grid;
+            place-items: center;
+        }
+        
+        .center-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+            line-height: 1.4;
+            mix-blend-mode: difference;
+            z-index: 10;
+        }
+
+        .center-text,
+        .cube {
+            grid-area: 1 / 1;
         }
 
         .cube {
