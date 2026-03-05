@@ -41,7 +41,7 @@ npm run dev
 
 ## 参考
 
-- [portfolio](https://emi-dev.com)
+- [Portfolio](https://emi-dev.com)
 - 制作ログ
   - [制作ログ #1](https://note.com/emi_create/n/ncfaa20634028)
   - [制作ログ #2](https://note.com/emi_create/n/n6e232fd72934)
