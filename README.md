@@ -7,17 +7,21 @@
 
 ## 構成
 
+## 構成
+
 - **Heroページ**
-画面いっぱいに幅と高さをとり、Framer Motionを使って、タイトルを表示させたのと、Animation Frameを使ってCubeを回転させています。
+  - Framer Motionでタイトルをアニメーション表示
+  - Animation Frameを使ってCubeを回転
 
 - **Worksページ**
-今まで制作した作品をリスト形式で表示しています。Framer Motionのlayout機能を使って、開閉するUIリストを作成しました。
+  - 制作した作品をリスト表示
+  - Framer Motionのlayout機能で開閉UIを実装
 
 - **Skillsページ**
-最近のスキルについて表示しています。
+  - 最近使用しているスキルを表示
 
-- **Footerページ**
-
+- **Footer**
+  
 ## 使用技術
 
 Next.js / Framer Motion / TypeScript / Tailwind CSS 
