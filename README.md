@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+私のポートフォリオをnext.jsで作りました。
 
-First, run the development server:
+[Demo URL] (my-portfolio-one-sandy-71.vercel.app)
 
+## 構成
+
+Heroページ：　画面いっぱいに幅と高さをとり、Framer Motionを使って、タイトルを表示させたのと、Animation Frameを使ってCubeを回転させています。
+Worksページ：　今まで制作した作品をリスト形式で表示しています。Framer Motionのlayout機能を使って、開閉するUIリストを作成しました。
+Skillsページ：　最近のスキルについて表示しています。
+Footerページ
+
+## 使用技術
+
+Next.js / Framer Motion / TypeScript / Tailwind CSS 
+
+## セットアップ
+
+Next.jsのプロジェクトなので、
+
+サーバー上で
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)でブラウザーからアクセスできます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 参考
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[portfolio](https://emi-dev.com)
+[制作ログ #1](https://note.com/emi_create/n/ncfaa20634028)
+[制作ログ #2](https://note.com/emi_create/n/n6e232fd72934)
+[制作ログ #3](https://note.com/emi_create/n/ncba3e804f9e6)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[ブログ](https://aobacreate.net)
+[x](https://x.com/emi_create)
