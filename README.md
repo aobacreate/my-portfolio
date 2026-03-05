@@ -3,9 +3,7 @@
 
 ## Demo
 
-[Demo URL](my-portfolio-one-sandy-71.vercel.app)
-
-## 構成
+▶ https://my-portfolio-one-sandy-71.vercel.app
 
 ## 構成
 
@@ -28,7 +26,7 @@ Next.js / Framer Motion / TypeScript / Tailwind CSS
 
 ## セットアップ
 
-Next.jsのプロジェクトなので、
+以下のコマンドで開発サーバーを起動できます。
 
 サーバー上で
 ```bash
@@ -40,14 +38,11 @@ npm run dev
 
 ## 参考
 
-[portfolio](https://emi-dev.com)
-
-[制作ログ #1](https://note.com/emi_create/n/ncfaa20634028)
-
-[制作ログ #2](https://note.com/emi_create/n/n6e232fd72934)
-
-[制作ログ #3](https://note.com/emi_create/n/ncba3e804f9e6)
-
-[ブログ](https://aobacreate.net)
-
-[x](https://x.com/emi_create)
+- [portfolio](https://emi-dev.com)
+- 制作ログ
+  - [制作ログ #1](https://note.com/emi_create/n/ncfaa20634028)
+  - [制作ログ #2](https://note.com/emi_create/n/n6e232fd72934)
+  - [制作ログ #3](https://note.com/emi_create/n/ncba3e804f9e6)
+  - [ブログ](https://aobacreate.net)
+- [Blog](https://aobacreate.net)
+- [x](https://x.com/emi_create)
