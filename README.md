@@ -1,5 +1,8 @@
 
-私のポートフォリオをnext.jsで作りました。
+Next.js を使って個人ポートフォリオサイトを制作しました。
+
+Framer Motion を使ったアニメーションやインタラクションを取り入れています。  
+制作した作品やスキルを紹介するサイトです。
 
 ## Demo
 
@@ -43,6 +46,5 @@ npm run dev
   - [制作ログ #1](https://note.com/emi_create/n/ncfaa20634028)
   - [制作ログ #2](https://note.com/emi_create/n/n6e232fd72934)
   - [制作ログ #3](https://note.com/emi_create/n/ncba3e804f9e6)
-  - [ブログ](https://aobacreate.net)
-- [Blog](https://aobacreate.net)
+- [ブログ](https://aobacreate.net)
 - [x](https://x.com/emi_create)
