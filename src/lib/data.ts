@@ -17,9 +17,9 @@ export const works: Work[] = [
     description:
       "Framer Motionを活用したアニメーション中心のポートフォリオサイト。レイアウト設計と動きの表現に注力しました。",
     tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    demoUrl: "https://emi-dev.com",
+    demoUrl: "https://my-portfolio-one-sandy-71.vercel.app",
     githubUrl: "https://github.com/aobacreate/my-portfolio",
-    detailUrl: "https://aobacreate.net/my-portfolio",
+    detailUrl: "https://note.com/emi_create/n/ncfaa20634028",
   },
   {
     id: 2,
