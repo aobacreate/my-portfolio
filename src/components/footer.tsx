@@ -22,15 +22,6 @@ export default function Footer() {
       >
         Blog
       </a>
-
-      <a
-        href="https://twitter.com/emi_create"
-        target="_blank"
-        rel="noreferrer"
-        className="px-6 py-3 rounded-full border border-neutral-400 text-neutral-700 hover:bg-neutral-100 transition"
-      >
-        X
-      </a>
     </div>
 
     <p className="text-xs text-neutral-400">
