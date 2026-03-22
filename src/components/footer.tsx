@@ -5,7 +5,7 @@ export default function Footer() {
   <footer className="py-12 text-center text-sm text-neutral-600"
     style={{ backgroundColor: "var(--color-footer-bg)" }}
   >
-    <div className="mb-4 flex justify-center gap-8">
+    <div className="mb-4 flex justify-center gap-4">
       <a
         href="https://github.com/aobacreate"
         target="_blank"
